@@ -1,4 +1,4 @@
-#> hologram_ui_light:create/cancel
+#> hologram_ui_light:create/cancel/by_other_player
 #@within function hologram_ui_light:create/check
 
 tellraw @s [{"text": "Error» HologramUI» ", "color": "red"}, "他のプレイヤーが操作中です"]

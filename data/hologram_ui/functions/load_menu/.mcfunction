@@ -22,7 +22,7 @@ data modify storage : _ append value {}
     scoreboard players operation $mod5 _hologram_ui %= #5 _hologram_ui
 
     ## ホログラムの再召喚
-    kill @e[type=area_effect_cloud,tag=hologram_ui.hologram]
+    kill @e[tag=hologram_ui.hologram]
     execute unless data storage : _[-1].hologram_ui[20] if data storage : _[-1].hologram_ui[-1] run function hologram_ui:summon/hologram/
 
   scoreboard objectives remove _hologram_ui

@@ -1,0 +1,6 @@
+{
+  "values": [
+    "hologram_ui_light:destroy",
+    {"id": "#hologram_ui_light:destroyed", "required": false}
+  ]
+}

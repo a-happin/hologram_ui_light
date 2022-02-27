@@ -1,7 +1,0 @@
-{
-  "values": [
-    "hologram_ui:create/impl",
-    "hologram_ui:load_menu/",
-    {"id": "#hologram_ui:created", "required": false}
-  ]
-}

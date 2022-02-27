@@ -1,4 +1,4 @@
-hologram_ui
+hologram_ui_light
 ==
 
 ## Features

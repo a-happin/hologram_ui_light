@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "team": "hologram_ui_light.click_detector"
+        },
+        "player": {
+          "player": {
+            "advancements": {
+              "hologram_ui_light:operator": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "hologram_ui_light:operator/clicked"
+  }
+}

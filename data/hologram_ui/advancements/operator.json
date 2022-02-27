@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "": {
+      "trigger": "impossible"
+    }
+  },
+  "rewards": {
+    "function": "hologram_ui:setup/"
+  }
+}

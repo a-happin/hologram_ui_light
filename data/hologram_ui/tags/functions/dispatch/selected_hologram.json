@@ -1,0 +1,6 @@
+{
+  "values": [
+    {"id": "#hologram_ui:selected_hologram", "required": false},
+    "hologram_ui:load_menu/reload"
+  ]
+}

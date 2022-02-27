@@ -1,4 +1,4 @@
-datapack-template
+hologram_ui
 ==
 
 ## Features

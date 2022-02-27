@@ -1,3 +1,5 @@
 {
-  "values": []
+  "values": [
+    "hologram_ui:tick"
+  ]
 }

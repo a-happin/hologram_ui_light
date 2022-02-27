@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "hologram_ui:setup/"
+    "function": "hologram_ui:create/"
   }
 }

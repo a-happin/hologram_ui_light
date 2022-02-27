@@ -4,6 +4,7 @@
 #>
 #@public
   #declare advancement hologram_ui:operator
+  #declare tag/function hologram_ui:destroy
   #declare storage :
   #declare tag hologram_ui.basepoint
 

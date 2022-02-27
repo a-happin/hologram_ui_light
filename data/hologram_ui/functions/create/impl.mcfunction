@@ -1,5 +1,5 @@
-#> hologram_ui:setup/impl
-#@within tag/function hologram_ui:dispatch/setup
+#> hologram_ui:create/impl
+#@within tag/function hologram_ui:create
 
 ## 位置と向きを補正する
 teleport @s ~ ~ ~ ~ ~

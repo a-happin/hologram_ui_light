@@ -15,4 +15,4 @@ tag @s add hologram_ui.this
 tag @s remove hologram_ui.this
 
 ## スニークしたら強制解除
-execute if entity @s[predicate=hologram_ui:is_sneaking] run function #hologram_ui:dispatch/destroy
+execute if entity @s[predicate=hologram_ui:is_sneaking] run function #hologram_ui:destroy

@@ -10,6 +10,7 @@
 
 #>
 #@within function hologram_ui:**
+  #declare tag hologram_ui.this
   #declare tag hologram_ui.hologram
   #declare tag hologram_ui.selectable
   #declare tag hologram_ui.targeting

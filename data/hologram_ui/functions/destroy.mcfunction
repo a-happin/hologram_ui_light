@@ -1,5 +1,5 @@
 #> hologram_ui:destroy
-#@public
+#@within tag/function hologram_ui:dispatch/destroy
 
 advancement revoke @s only hologram_ui:operator
 teleport @e[type=wandering_trader,team=hologram_ui.click_detector,distance=..3] ~ -200 ~

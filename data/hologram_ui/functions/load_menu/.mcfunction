@@ -1,9 +1,12 @@
 #> hologram_ui:load_menu/
 #@within
-#  function hologram_ui:setup/impl
+#  tag/function hologram_ui:dispatch/setup
 #  function hologram_ui:load_menu/reload
 
 data modify storage : _ append value {}
+  #>
+  #@private
+  #declare tag/function hologram_ui:load_menu
   function #hologram_ui:load_menu
   #>
   #@within * hologram_ui:**

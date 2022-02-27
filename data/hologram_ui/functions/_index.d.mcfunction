@@ -8,8 +8,7 @@
   #declare tag hologram_ui.basepoint
 
 #>
-#@within * hologram_ui:**
-  #declare tag/function hologram_ui:load_menu
+#@within function hologram_ui:**
   #declare tag hologram_ui.hologram
   #declare tag hologram_ui.selectable
   #declare tag hologram_ui.targeting

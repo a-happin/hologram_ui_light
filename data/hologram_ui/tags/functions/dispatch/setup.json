@@ -1,0 +1,7 @@
+{
+  "values": [
+    "hologram_ui:setup/impl",
+    "hologram_ui:load_menu/",
+    {"id": "#hologram_ui:setup", "required": false}
+  ]
+}

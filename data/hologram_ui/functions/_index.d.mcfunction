@@ -14,10 +14,7 @@
   #declare tag hologram_ui.selectable
   #declare tag hologram_ui.targeting
   #declare tag hologram_ui.init
-  #declare score_holder $s (size - 1) / 5 * 5
-  #declare score_holder $mod5
   #declare score_holder $index
   #declare score_holder $yaw
   #declare score_holder $y
-  #declare score_holder #5
   #declare score_holder #9

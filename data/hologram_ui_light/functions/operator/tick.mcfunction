@@ -1,5 +1,5 @@
 #> hologram_ui_light:operator/tick
-#@within function hologram_ui_light:tick
+#@within function hologram_ui_light:operator/check
 
 ## 固定
 execute unless entity @s[distance=0] run function hologram_ui_light:operator/stick
@@ -10,6 +10,3 @@ tag @s add hologram_ui_light.this
     execute as @e[type=area_effect_cloud,tag=hologram_ui_light.targeting,distance=..3,sort=nearest,limit=1] at @s run particle dust 1 1 1 0.3 ~ ~0.7 ~ 0.1 0 0.1 0 10
   tag @e[type=area_effect_cloud,tag=hologram_ui_light.targeting,distance=..3] remove hologram_ui_light.targeting
 tag @s remove hologram_ui_light.this
-
-## スニークしたら強制解除
-execute if entity @s[predicate=hologram_ui_light:is_sneaking] run function #hologram_ui_light:destroy

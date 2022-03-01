@@ -80,13 +80,11 @@ hologram_ui_light
 
 - 初期化完了時に呼ばれます。ほぼ演出用です
 - 起動音を鳴らすとそれっぽくなります
-- (不完全ですが)[#2](https://github.com/a-happin/hologram_ui_light/issues/2)の修正に利用できます
 
 #### `tag/function #hologram_ui_light:destroyed`
 
 - HologramUI終了時に呼ばれます。ほぼ演出用です
 - 終了音を鳴らすとそれっぽくなります
-- (不完全ですが)[#2](https://github.com/a-happin/hologram_ui_light/issues/2)の修正に利用できます
 
 
 ### menuの構造
@@ -157,6 +155,19 @@ advancement grant @s only hologram_ui_light:operator
 - そのプレイヤーの近くのbasepointに固定されます
 - basepointが10ブロックより離れていると検知に失敗するので注意してください
 - basepointの近くの石のボタンを押したプレイヤーを対象に～みたいなのを想定してます
+
+#### ありそうなQ&A
+
+##### 文字列が長すぎて重なった、位置調整がしたい
+
+- 細かな位置調整はできませんが、ダミー要素を追加することである程度調整が可能です
+- ダミー要素を追加することで結果的に空白をあけることができます
+- ダミー要素の場所にはarea_effect_cloudの召喚すら行われませんので、ダミー要素をたくさん追加したからといって重くなることはありません
+
+```mcfunction
+## ダミー要素を追加する
+data modify storage : _[-1].menu append value {}
+```
 
 #### その他
 1. 壁として、2～3ブロック程度離して黒系のブロックを置いたほうがいいかもしれません

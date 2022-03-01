@@ -4,8 +4,6 @@ hologram_ui_light
 ## Features
 
 - [ちぇん](https://github.com/ChenCMD)氏の[MCCMD-HologramUI](https://github.com/ChenCMD/MCCMD-HologramUI)を参考に1から作ったもの。~~パクりともいう~~
-- 自分用につくっているので他の人は使いにくいかもしれません……。
-- for 1.18.1
 
 ### 本家との違い
 
@@ -127,7 +125,8 @@ summon marker ~ ~ ~ {Tags:["hologram_ui_light.basepoint"]}
 execute as @e[type=marker,tag=hologram_ui_light.basepoint,distance=..0.01] align xz positioned ~0.5 ~ ~0.5 rotated 0 0 run teleport @s ~ ~ ~ ~ ~
 ```
 
-- めんどくさい人向けに`hologram_ui_light:summon/basepoint/rotated_<向き>`があります
+- `hologram_ui_light:summon/basepoint/`を使うと便利です
+  - これをチャット欄から実行するとプレイヤーの立っているブロックのxzの中心に向きを東西南北に補正して召喚します
 
 
 #### `default_menu_id`を設定する (任意)
@@ -163,7 +162,9 @@ advancement grant @s only hologram_ui_light:operator
 1. 壁として、2～3ブロック程度離して黒系のブロックを置いたほうがいいかもしれません
 
 ## Requirement
-プレイヤーのrelogin時に`tag/function #player:relogined`を呼び出すデータパックを導入することで[#1](https://github.com/a-happin/hologram_ui_light/issues/1)を直せます。
+
+- Minecraft JE 1.18.2
+- [player_event](https://github.com/a-happin/player_event)
 
 ## Installation
 

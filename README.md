@@ -35,8 +35,8 @@ hologram_ui_light
 - スニークすることでいつでも強制終了できます
 - Hologramは横9x縦5のグリッドに配置されます
   - Hologramは最大45個です
-- HologramにIDを割り当てると選択可能になる
-  - 逆に言えばIDを割り当てなければ選択不可能になる
+- HologramにIDを割り当てると選択可能になります
+  - 逆に言えばIDを割り当てなければ選択不可能になります
 - ワールドに複数のbasepointを設定する場合は20ブロック以上離したほうが無難です
   - 近いと別のbasepointに固定される可能性があります
 
@@ -178,6 +178,8 @@ data modify storage : _[-1].menu append value {}
 - [player_event](https://github.com/a-happin/player_event)
 
 ## Installation
+
+1. このデータパックは[player_event](https://github.com/a-happin/player_event)に依存しているためこちらのインストールも必要です
 
 ## License
 Creative Commons Zero v1.0 Universal

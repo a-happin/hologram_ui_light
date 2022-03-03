@@ -1,4 +1,4 @@
 #> hologram_ui_light:tick
-#@within tag/function tick
+#@within tag/function player:tick
 
-execute as @a[advancements={hologram_ui_light:operator=true}] at @s run function hologram_ui_light:operator/check
+execute if entity @s[advancements={hologram_ui_light:operator=true}] run function hologram_ui_light:operator/check

@@ -1,5 +1,5 @@
-#> hologram_ui_light:operator/tick
-#@within function hologram_ui_light:operator/check
+#> hologram_ui_light:operator/tick/impl
+#@within function hologram_ui_light:operator/tick/
 
 ## 固定
 execute unless entity @s[distance=0] run function hologram_ui_light:operator/stick

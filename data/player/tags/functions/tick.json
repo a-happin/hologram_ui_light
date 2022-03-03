@@ -1,5 +1,5 @@
 {
   "values": [
-    "hologram_ui_light:tick"
+    "hologram_ui_light:handler/tick"
   ]
 }

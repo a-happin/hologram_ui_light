@@ -1,5 +1,5 @@
 {
   "values": [
-    "hologram_ui_light:operator/started_pressing_key.sneak"
+    "hologram_ui_light:handler/started_pressing_key.sneak"
   ]
 }

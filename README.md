@@ -175,11 +175,13 @@ data modify storage : _[-1].menu append value {}
 ## Requirement
 
 - Minecraft JE 1.18.2
-- [player_event](https://github.com/a-happin/player_event)
+- [player.tick](https://github.com/a-happin/player-datapacks/tree/master/01.player.tick)
+- [player.initialize](https://github.com/a-happin/player-datapacks/tree/master/02.player.initialize)
+- [player.sneak_time](https://github.com/a-happin/player-datapacks/tree/master/10.player.sneak_time)
 
 ## Installation
 
-1. このデータパックは[player_event](https://github.com/a-happin/player_event)に依存しているためこちらのインストールも必要です
+1. このデータパックは`player.tick`, `player.initialize`, `player.sneak_time`に依存しているため、[player-datapacks/releases](https://github.com/a-happin/player-datapacks/releases)から依存ライブラリもインストールしてください。
 
 ## License
 Creative Commons Zero v1.0 Universal

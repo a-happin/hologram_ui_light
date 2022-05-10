@@ -25,8 +25,8 @@ hologram_ui_light
   - スライムを使用しないことにより毎tickNBT操作を回避する
     - 右クリック検知用エンティティとして wandering_trader を使用しています
       - 村人だと種を拾っちゃうっぽいので
-- HologramUIを起動中のみエンティティを配置する
-- プレイヤーがHologramUIを操作中は**そのHologramUI**を他のプレイヤーは操作できない
+- Hologram UIを起動中のみエンティティを配置する
+- プレイヤーがHologram UIを操作中は**そのHologram UI**を他のプレイヤーは操作できない
 
 
 ### 独自機能や制約
@@ -53,14 +53,14 @@ hologram_ui_light
 
 |name|description|
 |:-:|:-:|
-|HologramUI|Hologram User Interfaceの略だが、Hologramを選択して任意のコマンドを実行するプログラム(システム)の名前として使っていることがある|
-|basepoint|HologramUIを操作するプレイヤーを固定する位置、またはそれを示すmarker entity|
-|Hologram|HologramUIに表示されているホログラム|
+|Hologram UI|Hologram User Interfaceの略だが、Hologramを選択して任意のコマンドを実行するプログラム(システム)の名前として使っていることがある|
+|basepoint|Hologram UIを操作するプレイヤーを固定する位置、またはそれを示すmarker entity|
+|Hologram|Hologram UIに表示されているホログラム|
 |HologramID|Hologramに割り当てられているID、重複可能|
-|メニュー|HologramUIに表示するHologramを決定するためのデータ(?)|
+|メニュー|Hologram UIに表示するHologramを決定するためのデータ(?)|
 |メニューID|`score @s hologram_ui_light.menu_id`|
 |default_menu_id|HorogramUI起動時に表示されるメニューID|
-|operator|1. `advancement hologram_ui_light:operator`<br>2. HologramUIを操作中のプレイヤー|
+|operator|1. `advancement hologram_ui_light:operator`<br>2. Hologram UIを操作中のプレイヤー|
 
 ### イベントハンドラ
 
@@ -69,7 +69,7 @@ hologram_ui_light
 - Hologram選択時に呼ばれます
 - `score @s hologram_ui_light.id`の値に応じて任意のコマンドを実行してください
 - メニューの遷移を行うにはここで`score @s hologram_ui_light.menu_id`を変更してください
-- HologramUIを終了するには`tag/function #hologram_ui_light:destroy`を呼んでください
+- Hologram UIを終了するには`tag/function #hologram_ui_light:destroy`を呼んでください
 
 #### `tag/function #hologram_ui_light:load_menu`
 
@@ -83,7 +83,7 @@ hologram_ui_light
 
 #### `tag/function #hologram_ui_light:destroyed`
 
-- HologramUI終了時に呼ばれます。ほぼ演出用です
+- Hologram UI終了時に呼ばれます。ほぼ演出用です
 - 終了音を鳴らすとそれっぽくなります
 
 
@@ -144,7 +144,7 @@ data modify entity @e[type=marker,tag=hologram_ui_light.basepoint,sort=nearest,l
 
 #### operatorを付与する
 
-HologramUIを操作したいプレイヤーを対象に
+Hologram UIを操作したいプレイヤーを対象に
 
 ```mcfunction
 advancement grant @s only hologram_ui_light:operator

@@ -21,4 +21,4 @@ execute store result score @s hologram_ui_light.menu_id run data get entity @e[t
 execute unless entity @e[type=wandering_trader,team=hologram_ui_light.click_detector,distance=0] run function hologram_ui_light:summon/click_detector/
 
 ## actionbar
-title @s actionbar [{"translate": "%s キーで HologramUI を終了", "with": [{"keybind": "key.sneak"}]}]
+title @s actionbar [{"translate": "%s キーで Hologram UI Light を終了", "with": [{"keybind": "key.sneak"}]}]

@@ -173,7 +173,7 @@ data modify storage : _[-1].menu append value {}
 
 ## Requirement
 
-- Minecraft JE 1.18.2
+- Minecraft JE 1.19
 - [player.tick](https://github.com/a-happin/player-datapacks/tree/master/01.player.tick)
 - [player.initialize](https://github.com/a-happin/player-datapacks/tree/master/02.player.initialize)
 - [player.sneak_time](https://github.com/a-happin/player-datapacks/tree/master/10.player.sneak_time)
